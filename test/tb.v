@@ -17,16 +17,14 @@ module tb ();
     end
 
     // wire up the inputs and outputs
-    reg  clk;
-    reg  rst_n;
-    reg  ena;
-    reg  [7:0] ui_in;
-    reg  [7:0] uio_in;
-
-    wire [6:0] segments = uo_out[6:0];
-    wire [7:0] uo_out;
-    wire [7:0] uio_out;
-    wire [7:0] uio_oe;
+  reg clk;
+  reg rst_n;
+  reg ena;
+  reg [7:0] ui_in;
+  reg [7:0] uio_in;
+  wire [7:0] uo_out;
+  wire [7:0] uio_out;
+  wire [7:0] uio_oe;
 
     tt_um_FanCTRL_DomnikBrandstetter tt_um_FanCTRL (
     // include power ports for the Gate Level test
